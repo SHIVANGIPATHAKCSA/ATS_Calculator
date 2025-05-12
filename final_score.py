@@ -11,6 +11,8 @@ import spacy
 from skillNer.general_params import SKILL_DB
 from skillNer.skill_extractor_class import SkillExtractor
 from spacy.matcher import PhraseMatcher
+import torch
+torch._classes = None
 
 model = SentenceTransformer('BAAI/bge-base-en-v1.5')
 
